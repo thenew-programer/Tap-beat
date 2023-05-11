@@ -1,0 +1,110 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Noto Music', 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+	background: #000;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	height: 20%;
+	padding: 2rem;
+	margin-bottom: 4rem;
+	width: 80%;
+}
+
+header h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+header h3 {
+	font-weight: 400;
+	font-size: 2.2rem;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 2rem;
+}
+
+main {
+	width: 100%;
+}
+
+.rectangle {
+	display: flex;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.rectangle .item {
+	height: 100px;
+	width: 16.666%;
+	border-right: .5px solid #000;
+	transition: .3s;
+	flex: 1;
+}
+
+.it6 {
+	background: #C1D0B5;
+}
+
+.it5 {
+	background: #D6E8DB;
+}
+
+.it4 {
+	background: #FFF8DE;
+}
+
+.it3 {
+	background: #FFD3B0;
+}
+
+.it2 {
+	background: #FF6969;
+}
+
+.it1 {
+	background: #A6D0DD;
+}
+
+
+.rectangle .item:hover {
+	transform: translateY(-10%);
+}
+
+.bubbles > div {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	bottom: 0;
+	left: 20%;
+	bottom: 0;
+}
+
+@keyframes jump{
+	0%{
+		bottom: 0;
+		left: 15%;
+	} 50% {
+		bottom: 50%;
+		left: 50%;
+	} 100% {
+		bottom: 0%;
+		left: 90%;
+	}
+}
+
